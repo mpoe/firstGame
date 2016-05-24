@@ -1,0 +1,175 @@
+/*
+Theme Name: mpoethemev420
+Theme URI: mpoe.dk/wp
+Author: Mpoe
+Author URI: mpoe.dk
+Description: nicememe
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: simple
+Text Domain: mpoestyle
+*/
+
+#cssmenu {
+  zoom: 1;
+  width: auto;
+  background: #000000;
+  padding: 8px 0;
+}
+#cssmenu:before {
+  content: '';
+  display: block;
+}
+#cssmenu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu ul {
+  list-style-type: none;
+  position: relative;
+  display: block;
+  font-size: 12px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #7ab900;
+  zoom: 1;
+}
+#cssmenu ul:before {
+  content: '';
+  display: block;
+}
+#cssmenu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li a {
+  float: left;
+  color: #A79787;
+  text-decoration: none;
+  height: 24px;
+  padding: 9px 15px 0;
+  font-weight: normal;
+}
+#cssmenu li:hover,
+#cssmenu .current-menu-item {
+  text-decoration: none;
+  border-bottom: 2px solid #7ab900;
+}
+#cssmenu li:hover a {
+  color: #fff;
+}
+#cssmenu .current-menu-item a {
+  color: #fff;
+  font-weight: 700;
+}
+/*        END OF MENU                 */
+
+#cover{
+    width: auto;
+    display: block;
+    height: 200px;
+}
+#wrapper{
+    min-width: 70%;
+    margin: 0 10%;
+}
+p{
+    font-size: 2em;
+    max-width: 40em;
+    padding-left: 10px;
+}
+
+.dynamic{
+    width: 100%;
+    max-width: 1008px;
+    margin: 0 auto;   
+}
+#coverimage{
+    max-width: 100%;
+    height: 200px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 1500px;
+    width: auto;
+    height: auto;
+}
+h2, h3{
+    font-size: 200%;
+}
+
+.home:nth-child(odd){
+    background: #DDDDDD;
+}
+.home:nth-child(even){
+    background: #BBBBBB;
+}
+.post:nth-child(odd){
+    background: #DDDDDD;
+}
+.post:nth-child(even){
+    background: #BBBBBB;
+}
+
+/* GRID */
+
+.row:before,
+.row:after{
+    content: " ";
+    display: table;
+}
+.row:after{
+    clear: both;
+}
+
+.column{
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.blogpost{
+    background-color: #DDDDDD;
+}
+
+.grid_1 { width: 8.33333333%; }
+.grid_2 { width: 16.66666667%; }
+.grid_3 { width: 25%; }
+.grid_4 { width: 33.33333333%; background-color: #BBBBBB;}
+.grid_5 { width: 41.66666667%; }
+.grid_6 { width: 50%; }
+.grid_7 { width: 58.33333333%; }
+.grid_8 { width: 66.66666667%; }
+.grid_9 { width: 75%; }
+.grid_10 { width: 83.33333333%; }
+.grid_11 { width: 91.66666667%; }
+.grid_12 { width: 100%; }
+
+/* END GRID*/
+
+@media screen and (max-width: 1008px) {
+    #wrapper{
+        margin: 0 0;
+    }
+    .info{
+        display: none;
+    }
+    .home{
+        width: 100%;
+    }
+    .attachment-post-thumbnail{
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
